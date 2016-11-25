@@ -48,6 +48,7 @@ function random_str( $num = 30 ) {
 
 function not_found() {
 	exit('Страница 404 <a href="/">На Главную</a>');
+    location('/login');
 }
 
 
@@ -97,7 +98,8 @@ function top( $title,$dopmenu = '' ) {
         $avmenu = '
 <a href="/profile">Профайл</a>
 <a href="/history">История</a>
-<a href="/stable">Конюшня</a>'.$dopmenu;
+<a href="/stable">Конюшня</a>'.$dopmenu.'
+<hr><a href="/logout"><b>Выход</b></a>';
     } else $avmenu = '<a href="/login">Вход</a><a href="/register">Регистрация</a>';
 
 echo '<!DOCTYPE html>

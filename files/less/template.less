@@ -1,4 +1,4 @@
-* {margin: 0; padding: 0}
+//* {margin: 0; padding: 0}
 
 a {text-decoration: none}
 
@@ -52,14 +52,22 @@ input[type=password] {
   width: 300px;
   outline: none;
 }
-
-.wrapper, .content, .menu, body, html {
-  min-height: 100%;
+html, body {
+  margin: 0;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+ .content, .menu, body, html {
 
 }
 
 .wrapper {
   display: flex;
+  //flex-wrap: nowrap;
+  //align-items: stretch;
+  //flex-direction: row;
+  min-height: 100%;
 }
 .content {
   flex: 1;

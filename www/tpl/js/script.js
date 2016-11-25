@@ -14,7 +14,6 @@ function post_query(url, name, data) {
     $.each(data.split('.'), function (k, v) {
         str += '&' + v + '=' + $('#' + v).val();
     });
-    console.log(str);
     $.ajax(
         {
             url: '/' + url,
@@ -22,7 +21,7 @@ function post_query(url, name, data) {
             data: name + '_f=1' + str,
             cache: false,
             success: function (result) {
-
+                console.log(result);
                 obj = jQuery.parseJSON(result);
 
                 if (obj.go) go(obj.go);

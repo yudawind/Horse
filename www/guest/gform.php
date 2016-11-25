@@ -11,6 +11,15 @@ if ($_POST['login_f']) {
 
     $row = mysqli_fetch_assoc(mysqli_query($CONNECT, "SELECT * FROM `users` WHERE `email` = '$_POST[email]'"));
 
+    if ($row['ip']) {
+        $arr = explode(',',$row['ip']);
+
+        if (!in_array($_SERVER['REMOTE_ADDR'],$arr))
+
+            message('Доступ запрещен');
+
+    }
+
     foreach ($row as $key => $value)
         $_SESSION[$key] = $value;
 
@@ -69,7 +78,7 @@ if ($_POST['login_f']) {
         if ($_SESSION['confirm']['code'] != $_POST['code'])
             message('Код подтверждения регистрации указан неверно');
 
-        mysqli_query($CONNECT, 'INSERT INTO `users` VALUES ("", "' . $_SESSION['confirm']['email'] . '", "' . $_SESSION['confirm']['password'] . '")');
+        mysqli_query($CONNECT, 'INSERT INTO `users` VALUES ("", "' . $_SESSION['confirm']['email'] . '", "' . $_SESSION['confirm']['password'] . '", "")');
         unset($_SESSION['confirm']);
 
         go('login');
