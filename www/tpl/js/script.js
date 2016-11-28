@@ -101,10 +101,10 @@ function post_stable(url, name, data) {
                 for (i=0;i<obj.length;i++) { // формируем результаты
                     val = obj[i];
                     console.log(val);
-                    val['speed'] = val['speed']/10;
-                    val['accel'] = val['accel']/10;
-                    val['turn'] = val['turn']/10;
-                    val['brake'] = val['brake']/10;
+                    val['speed'] = (val['speed']/10).toFixed(1);
+                    val['accel'] = (val['accel']/10).toFixed(1);
+                    val['turn'] = (val['turn']/10).toFixed(1);
+                    val['brake'] = (val['brake']/10).toFixed(1);
                     genstrok = '<div class="odlosh"><a href="/edithorse/'+val['id']+'">'+
                         "<span class='img'><img src='/tpl/img/"+val['breed']+".png'> </span>"+
                         "<span class='sex'><img width='14' src='/tpl/img/sex0"+val['sex']+".png'></span>"+
