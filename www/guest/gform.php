@@ -23,7 +23,7 @@ if ($_POST['login_f']) {
     foreach ($row as $key => $value)
         $_SESSION[$key] = $value;
 
-    go('profile');
+    go('stable');
 
 
 } else if ($_POST['register_f']) {

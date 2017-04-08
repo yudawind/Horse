@@ -75,30 +75,30 @@ echo '</div>
         <p><label for="turn">поворот</label><br><input type="number" value="'.$row['turn'].'" id="turn"></p>
         <p><label for="brake">торможение</label><br><input type="number" value="'.$row['brake'].'" id="brake"></p>
         <p>
-            <label><input class="chbs" type="checkbox" value="'.$row['01'].' id="01">01</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['02'].' id="02">02</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['03'].' id="03">03</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['04'].' id="04">04</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['05'].' id="05">05</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['06'].' id="06">06</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['07'].' id="07">07</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['08'].' id="08">08</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['09'].' id="09">09</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['10'].' id="10">10</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['11'].' id="11">11</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['12'].' id="12">12</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['13'].' id="13">13</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['14'].' id="14">14</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['15'].' id="15">15</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['16'].' id="16">16</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['17'].' id="17">17</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['18'].' id="18">18</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['19'].' id="19">19</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['20'].' id="20">20</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['21'].' id="21">21</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['22'].' id="22">22</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['23'].' id="23">23</label>
-            <label><input class="chbs" type="checkbox" value="'.$row['24'].' id="24">24</label>
+            <label class="skil sk01"><input class="chbs" type="checkbox" value="'.$row['01'].' id="01">01</label>
+            <label class="skil sk02"><input class="chbs" type="checkbox" value="'.$row['02'].' id="02">02</label>
+            <label class="skil sk03"><input class="chbs" type="checkbox" value="'.$row['03'].' id="03">03</label>
+            <label class="skil sk04"><input class="chbs" type="checkbox" value="'.$row['04'].' id="04">04</label>
+            <label class="skil sk05"><input class="chbs" type="checkbox" value="'.$row['05'].' id="05">05</label>
+            <label class="skil sk06"><input class="chbs" type="checkbox" value="'.$row['06'].' id="06">06</label>
+            <label class="skil sk07"><input class="chbs" type="checkbox" value="'.$row['07'].' id="07">07</label>
+            <label class="skil sk08"><input class="chbs" type="checkbox" value="'.$row['08'].' id="08">08</label>
+            <label class="skil sk09"><input class="chbs" type="checkbox" value="'.$row['09'].' id="09">09</label>
+            <label class="skil sk10"><input class="chbs" type="checkbox" value="'.$row['10'].' id="10">10</label>
+            <label class="skil sk11"><input class="chbs" type="checkbox" value="'.$row['11'].' id="11">11</label>
+            <label class="skil sk12"><input class="chbs" type="checkbox" value="'.$row['12'].' id="12">12</label>
+            <label class="skil sk13"><input class="chbs" type="checkbox" value="'.$row['13'].' id="13">13</label>
+            <label class="skil sk14"><input class="chbs" type="checkbox" value="'.$row['14'].' id="14">14</label>
+            <label class="skil sk15"><input class="chbs" type="checkbox" value="'.$row['15'].' id="15">15</label>
+            <label class="skil sk16"><input class="chbs" type="checkbox" value="'.$row['16'].' id="16">16</label>
+            <label class="skil sk17"><input class="chbs" type="checkbox" value="'.$row['17'].' id="17">17</label>
+            <label class="skil sk18"><input class="chbs" type="checkbox" value="'.$row['18'].' id="18">18</label>
+            <label class="skil sk19"><input class="chbs" type="checkbox" value="'.$row['19'].' id="19">19</label>
+            <label class="skil sk20"><input class="chbs" type="checkbox" value="'.$row['20'].' id="20">20</label>
+            <label class="skil sk21"><input class="chbs" type="checkbox" value="'.$row['21'].' id="21">21</label>
+            <label class="skil sk22"><input class="chbs" type="checkbox" value="'.$row['22'].' id="22">22</label>
+            <label class="skil sk23"><input class="chbs" type="checkbox" value="'.$row['23'].' id="23">23</label>
+            <label class="skil sk24"><input class="chbs" type="checkbox" value="'.$row['24'].' id="24">24</label>
         </p>
         <p>
             <button onclick="post_add(\'editbasehorse/'.$_POST['id'].'\', \'edithorse\',

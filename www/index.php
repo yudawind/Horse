@@ -1,7 +1,7 @@
 <?
 
 
-if ( $_SERVER['REQUEST_URI'] == '/' ) $page = 'home';
+if ( $_SERVER['REQUEST_URI'] == '/' ) $page = 'stable';
 else {
 
 	$page = substr($_SERVER['REQUEST_URI'], 1);
