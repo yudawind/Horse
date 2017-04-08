@@ -22,6 +22,8 @@ if ( file_exists('all/'.$page.'.php') ) include 'all/'.$page.'.php';
 
 else if ( $_SESSION['id'] and file_exists('auth/'.$page.'.php') ) include 'auth/'.$page.'.php';
 
+else if ( !$_SESSION['id'] and file_exists('auth/'.$page.'.php') ) header('location: /login');
+
 else if ( !$_SESSION['id'] and file_exists('guest/'.$page.'.php') ) include 'guest/'.$page.'.php';
 
 else not_found();
@@ -48,7 +50,8 @@ function random_str( $num = 30 ) {
 
 function not_found() {
 	exit('Страница 404 <a href="/">На Главную</a>');
-    location('/login');
+//    header('location: /login');
+//	location('/login');
 }
 
 
@@ -122,7 +125,11 @@ echo '<!DOCTYPE html>
 <div class="wrapper">
 
 <div class="menu">
-<a href="/">Главная</a>'.$avmenu.'</div>
+<a href="/">Главная</a>
+<a href="/contact">Обратная связь</a>
+'.$avmenu.'
+
+</div>
 
 
 <div class="content">
